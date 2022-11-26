@@ -106,7 +106,7 @@ impl Drop for ShowKeyboardArg {
 /// For now, assume the buffer always represents a UTF16 and convert accordingly.
 #[repr(C)]
 pub struct ShowKeyboardString {
-    pub string_buffer: *const u8,
+    pub string_buffer: *const u16,
     pub buffer_len: usize,
 }
 
